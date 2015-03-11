@@ -4,6 +4,12 @@ def addSpace
 	puts ''; puts ''; puts ''
 end
 
+def followTheWitches
+	puts 'You followed the witches'
+end
+def dontFollowTheWitches
+	puts 'You did not follow the witches'
+end
 
 def runMacbeth
 	helpState = 1
@@ -13,19 +19,12 @@ def runMacbeth
 	addSpace
 	puts 'You hear some mysterious noises coming from the woods. You see three dark silhouettes in the woods. What do you do?'
 	addSpace
-	firstDecision
-end
 	
-def firstDecision
-	decision = getAnswer
-	if decision === 'FOLLOW'
-		followTheWitches
-	elsif decision === 'LEAVE'
-		dontFollowTheWitches
-	elsif decision === 'HELP'
-		helper
-		firstDecision
-	else
-		puts 'Yo no comprendo.'
-	end
+	#decision params are: first choice, second choice, first method to call, and second method
+
+	decision('FOLLOW', 'LEAVE', 'You followed the witches', 'You did not follow the witches')
 end
+
+
+	
+

@@ -1,4 +1,3 @@
-
 def helper
 	
 	#if helpState == 1
