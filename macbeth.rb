@@ -1,15 +1,10 @@
 load 'givehelp.rb'
+load 'witches.rb'
 
 def addSpace
 	puts ''; puts ''; puts ''
 end
 
-def followTheWitches
-	puts 'You followed the witches'
-end
-def dontFollowTheWitches
-	puts 'You did not follow the witches'
-end
 
 def runMacbeth
 	helpState = 1
@@ -27,6 +22,8 @@ def runMacbeth
 		followTheWitches
 	elsif choice == 'LEAVE'
 		dontFollowTheWitches
+	elsif choice == 'HELP'
+		helper
 	else
 		puts 'Je ne comprends pas!'
 		runMacbeth

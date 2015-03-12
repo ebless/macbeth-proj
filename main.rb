@@ -3,7 +3,6 @@ load 'ladymacbeth.rb'
 load 'macduff.rb'
 load 'givehelp.rb'
 
-helpState = 0
 
 def addSpace
 	puts ''; puts ''; puts ''
