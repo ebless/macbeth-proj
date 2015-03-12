@@ -28,18 +28,6 @@ def happyPanda
 	puts "I'm a happy panda!"
 end
 
-def decision(first_choice, second_choice, first_decision_text, second_decision_text)
-	choice = getAnswer
-	if choice === first_choice
-		firstDecision(first_decision_text)
-	elsif choice === second_choice
-		secondDecision(second_decision_text)
-	elsif choice === 'HELP'
-		helper
-	else
-		puts 'Yo no comprendo.'
-	end
-end
 #The programs begins with the first character choice, before leading into some backstory for each.
 
 
